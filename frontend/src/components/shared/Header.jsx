@@ -5,7 +5,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div className='bg-gra'  >
-      <Image src={logo} className='' />
+      <Image src={logo} className='' alt='logo' />
     </div>
   )
 }

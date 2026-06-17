@@ -1,4 +1,5 @@
-import { DM_Sans, DM_Mono } from "next/font/google";
+import { DM_Sans } from "next/font/google";
+
 import "./globals.css";
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
@@ -8,7 +9,7 @@ const dmSans = DM_Sans({
   subsets: ["latin"],
 });
 
-const dmMono = DM_Mono({
+const dmMono = DM_Sans({
   variable: "--font-dm-mono",
   subsets: ["latin"],
 });
@@ -20,21 +21,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${dmSans.variable} ${dmMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-screen flex flex-col bg-background text-foreground">
-        
-        <Header />
+    <html lang="en" className={`${dmSans.variable} ${dmMono.variable} h-full antialiased`}>
+  <body className="min-h-full flex flex-col">
 
-        <main className="flex-1">
-          {children}
-        </main>
+    <Header />
 
-        <Footer />
+    {children}
 
-      </body>
-    </html>
+    <Footer />
+
+  </body>
+</html>
   );
 }
