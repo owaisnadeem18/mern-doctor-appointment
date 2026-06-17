@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #ececec;
   --foreground: #171717;
 
-  /* Brand Colors */
+
+  /* footer bg and  brand Color */
   --brand-teal: #007e85;
 
   /* footer icons color */
@@ -25,6 +26,13 @@
   --color-gray-footer : var(--brand-gray);
 
 }
+
+/* utility class for page container */
+
+@utility page-container {
+  max-width: 1200px;
+  margin: auto;
+} 
 
 
 /* utility classes for dynamic footer items typography */
@@ -60,7 +68,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ececec;
   }
 }
 

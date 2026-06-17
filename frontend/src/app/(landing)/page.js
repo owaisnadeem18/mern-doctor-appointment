@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div className="min-h-[calc(100vh-50px)] page-container"  >
       Hello
     </div>
   )

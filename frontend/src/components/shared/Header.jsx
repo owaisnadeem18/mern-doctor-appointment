@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='bg-gra'  >
+    <div className='page-container'  >
       <Image src={logo} className='' alt='logo' />
     </div>
   )
