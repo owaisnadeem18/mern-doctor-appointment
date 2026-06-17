@@ -34,6 +34,25 @@
   margin: auto;
 } 
 
+/* utility classes for header: */
+
+@utility nav-text {
+  font-family: var(--font-dm-sans);
+  font-size: 18px;
+  font-weight: 500; /* Medium weight, standard for navbars */
+}
+
+@utility btn-primary {
+  background-color: var(--color-brand-teal);
+  color: #ffffff;
+  padding: 12px 32px; /* Top/Bottom and Left/Right padding */
+  border-radius: 8px;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+  &:hover {
+    opacity: 0.9;
+  }
+}
 
 /* utility classes for dynamic footer items typography */
 
