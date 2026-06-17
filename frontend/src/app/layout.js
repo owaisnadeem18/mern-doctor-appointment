@@ -1,4 +1,4 @@
-import { DM_Sans } from "next/font/google";
+import { DM_Sans, Lexend_Tera } from "next/font/google";
 
 import "./globals.css";
 import Footer from "@/components/shared/Footer";
@@ -9,10 +9,12 @@ const dmSans = DM_Sans({
   subsets: ["latin"],
 });
 
-const dmMono = DM_Sans({
-  variable: "--font-dm-mono",
-  subsets: ["latin"],
+const lexendTera = Lexend_Tera({
+  subsets: ['latin'],
+  weight: ['400'], 
+  variable: '--font-lexend-tera',
 });
+
 
 export const metadata = {
   title: "Create Next App",
@@ -21,7 +23,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${dmMono.variable} h-full antialiased bg-[]` }>
+    <html lang="en" className={`${dmSans.variable} ${lexendTera.variable} h-full antialiased ` }>
   <body className="min-h-full flex flex-col">
 
     <Header />

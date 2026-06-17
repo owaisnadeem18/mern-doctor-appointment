@@ -16,11 +16,14 @@ const navLinks = [
   { label: 'Blogs', href: '/blogs', isActive: false },
 ];
 
-const pathName = usePathname()
 
 
 
 const Header = () => {
+
+    const pathName = usePathname()
+    
+    
     return (
     <header className="w-full  py-4"> 
       <div className="page-container flex items-center justify-between">
