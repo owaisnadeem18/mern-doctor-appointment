@@ -7,6 +7,7 @@
   /* Brand colors */
   --brand-teal: #007e85;
   --brand-dark: #333333;
+  --brand-muted: #000000B2;
   --brand-light-green: #6EAB36;
   --brand-gray: #555555;
 
@@ -20,6 +21,7 @@
   --text-h3: 18px;
   --text-body: 16px;
   --text-small: 14px;
+  --text-paragraph: 18px;
 }
 
 /* TABLET */
@@ -31,6 +33,7 @@
     --text-h3: 20px;
     --text-body: 18px;
     --text-small: 14px;
+    --text-paragraph: 20px;
   }
 }
 
@@ -43,6 +46,7 @@
     --text-h3: 20px;
     --text-body: 18px;
     --text-small: 14px;
+    --text-paragraph: 20px;
   }
 }
 
@@ -59,6 +63,7 @@
   --font-tera: var(--font-lexend-tera);
   --font-lato: var(--font-lato);
 
+  --color-brand-muted: var(--brand-muted);
   --color-brand-green: var(--brand-light-green);
   --color-brand-teal: var(--brand-teal);
   --color-gray-footer: var(--brand-gray);
@@ -145,6 +150,15 @@
   font-size: var(--text-small);
   font-weight: 400;
   line-height: 1.4;
+}
+
+@utility text-paragraph {
+  font-family: var(--font-lato);
+  font-size: var(--text-paragraph);
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  color: var(--brand-muted);
 }
 
 /* =========================

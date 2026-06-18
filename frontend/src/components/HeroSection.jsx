@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Play, Clock, ArrowRight } from 'lucide-react'
+import Button from './ui/Button'
 
 // Replace with your actual image imports
 // import heroBg from '@/assets/hero-bg.jpg'
@@ -25,18 +26,10 @@ const HeroSection = () => {
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ">
           
           {/* Left Content */}
-          <div className="space-y-6 md:space-y-8 lg:space-y-10 order-2 lg:order-1">
+          <div className="flex flex-col justify-end gap-24">
             
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-teal/10 rounded-full w-fit">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-teal opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-teal"></span>
-              </span>
-              <span className="text-xs md:text-sm font-medium text-brand-teal">
-                Trusted Healthcare Provider
-              </span>
-            </div>
+            
+            <div className='flex flex-col gap-3' >
 
             {/* Main Heading */}
             <h1 className="text-display font-secondary font-semibold">
@@ -69,36 +62,34 @@ const HeroSection = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-sm sm:text-base md:text-lg text-[#4B5563] leading-relaxed max-w-xl">
+            <p className="text-paragraph">
               At Our Hospital, We Are Dedicated To Providing Exceptional Medical Care 
               To Our Patients And Their Families. Our Experienced Team Of Medical 
               Professionals, Cutting-Edge Technology, And Compassionate Approach Make 
               Us A Leader In The Healthcare Industry.
             </p>
 
+            </div>
+
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-2">
-              <Link 
-                href="/appointments" 
-                className="group inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-3.5 bg-brand-teal text-white font-semibold rounded-full hover:bg-brand-teal/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm md:text-base"
-              >
-                Appointments
-                <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
+            
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-12">
+              
+              <Button href={"/appointments"} children={"Appointments"} className='px-[40px] py-[13px]' />
               
               <Link 
                 href="#" 
-                className="group inline-flex items-center gap-3 px-6 md:px-8 py-3 md:py-3.5 text-[#171717] font-semibold hover:text-brand-teal transition-colors duration-300 text-sm md:text-base"
+                className="group inline-flex items-center gap-3"
               >
-                <span className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300">
-                  <Play className="w-4 h-4 md:w-5 md:h-5 text-brand-teal fill-brand-teal ml-0.5" />
+                <span className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-brand-teal rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300">
+                  <Play className="w-4 h-4 md:w-5 md:h-5 text-white fill-white ml-0.5" />
                 </span>
                 Watch Video
               </Link>
             </div>
 
             {/* Stats */}
-            <div className="flex items-center gap-8 md:gap-12 pt-4 border-t border-gray-200/50">
+            {/* <div className="flex items-center gap-8 md:gap-12 pt-4 border-t border-gray-200/50">
               <div>
                 <div className="flex items-center gap-2">
                   <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#171717]">24/7</span>
@@ -118,7 +109,7 @@ const HeroSection = () => {
                   <p className="text-xs text-[#6B7280]">Happy Patients</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Image */}
