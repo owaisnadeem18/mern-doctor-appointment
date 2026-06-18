@@ -8,7 +8,7 @@ const FindDoctor = () => {
   return (
     <div className="w-full page-container bg-brand-offwhite border-2 border-brand-offwhite rounded-2xl p-6 md:p-8 font-primary shadow-sm flex flex-col gap-4 md:gap-6 ">
       {/* Heading */}
-      <h2 className="text-h2 ">
+      <h2 className="text-h2 font-primary font-bold">
         Find A Doctor
       </h2>
 

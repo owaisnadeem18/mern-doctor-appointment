@@ -27,7 +27,7 @@ const HeroSection = () => {
             <div className='flex flex-col gap-3' >
 
             {/* Main Heading */}
-            <h1 className="text-display font-secondary font-semibold">
+            <h1 className="text-h1 font-secondary font-semibold">
 
                 Providing Quality 
                 

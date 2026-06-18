@@ -16,9 +16,8 @@
      TYPOGRAPHY (MOBILE FIRST)
      ========================= */
 
-  --text-display: 32px;
-  --text-h1: 28px;
-  --text-h2: 22px;
+  --text-h1: 32px;
+  --text-h2: 28px;
   --text-h3: 18px;
   --text-body: 16px;
   --text-small: 14px;
@@ -28,8 +27,7 @@
 /* TABLET */
 @media (min-width: 768px) {
   :root {
-    --text-display: 36px;
-    --text-h1: 30px;    
+    --text-h1: 36px;    
     --text-h2: 24px;
     --text-h3: 20px;
     --text-body: 18px;
@@ -41,9 +39,8 @@
 /* DESKTOP */
 @media (min-width: 1024px) {
   :root {
-    --text-display: 40px;
-    --text-h1: 32px;
-    --text-h2: 24px;
+    --text-h1: 40px;
+    --text-h2: 36px;
     --text-h3: 20px;
     --text-body: 18px;
     --text-small: 14px;
@@ -117,19 +114,14 @@
    TYPOGRAPHY UTILITIES
    ========================= */
 
-@utility text-display {
+@utility text-h1 {
   font-family: var(--font-lato);
-  font-size: var(--text-display);
+  font-size: var(--text-h1);
   font-weight: 600;
   line-height: 1.1;
   color: var(--brand-dark);
 }
 
-@utility text-h1 {
-  font-size: var(--text-h1);
-  font-weight: 600;
-  line-height: 1.1;
-}
 
 @utility text-h2 {
   font-size: var(--text-h2);
