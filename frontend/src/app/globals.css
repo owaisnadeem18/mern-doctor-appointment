@@ -9,6 +9,7 @@
   --brand-dark: #333333;
   --brand-muted: #000000B2;
   --brand-light-green: #6EAB36;
+  --brand-blue: #007E85;
   --brand-gray: #555555;
 
   /* =========================
@@ -65,6 +66,7 @@
 
   --color-brand-muted: var(--brand-muted);
   --color-brand-green: var(--brand-light-green);
+  --color-brand-blue: var(--brand-blue);
   --color-brand-teal: var(--brand-teal);
   --color-gray-footer: var(--brand-gray);
 }
@@ -175,6 +177,10 @@
 
 @utility font-tera {
   font-family: var(--font-lexend-tera);
+}
+
+@utility font-poppins {
+  font-family: var(--font-poppins);
 }
 
 /* =========================

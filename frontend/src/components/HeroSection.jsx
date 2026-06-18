@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Play, Clock, ArrowRight } from 'lucide-react'
 import Button from './ui/Button'
+import { doctorImage, vector } from '@/assets'
 
 // Replace with your actual image imports
 // import heroBg from '@/assets/hero-bg.jpg'
@@ -79,10 +80,10 @@ const HeroSection = () => {
               
               <Link 
                 href="#" 
-                className="group inline-flex items-center gap-3"
+                className="group inline-flex items-center gap-3 hover:text-brand-teal transition-colors duration-300"
               >
                 <span className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-brand-teal rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300">
-                  <Play className="w-4 h-4 md:w-5 md:h-5 text-white fill-white ml-0.5" />
+                  <Play className="w-4 h-4 md:w-5 md:h-5 text-white fill-white ml-0.5 " />
                 </span>
                 Watch Video
               </Link>
@@ -113,69 +114,25 @@ const HeroSection = () => {
           </div>
 
           {/* Right Image */}
-          <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-md lg:max-w-full">
-              {/* Main Image Container */}
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                {/* Replace with your actual image */}
-                <div className="aspect-[4/3] md:aspect-[5/4] lg:aspect-[4/3] xl:aspect-[5/4] bg-gradient-to-br from-brand-teal/20 to-blue-400/20 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-20 h-20 md:w-28 md:h-28 mx-auto rounded-full bg-brand-teal/20 flex items-center justify-center mb-4">
-                      <span className="text-4xl md:text-5xl">🏥</span>
-                    </div>
-                    <p className="text-sm md:text-base text-[#4B5563]">
-                      Professional Healthcare
-                    </p>
-                  </div>
-                </div>
+          <div className="relative flex justify-center lg:justify-end">
+            <Image src={doctorImage} alt="Doctor Image" width={449} height={626} className=" object-cover z-10" />
+            <Image src={vector} alt="Vector Image" width={520} height={548} className="absolute top-19 left-20 object-cover" />
 
-                {/* Floating Card 1 - Top Right */}
-                <div className="absolute -top-4 -right-4 md:-top-6 md:-right-6 bg-white rounded-2xl shadow-xl p-3 md:p-4 animate-bounce-slow">
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-green-100 flex items-center justify-center">
-                      <svg className="w-4 h-4 md:w-5 md:h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-xs md:text-sm font-semibold text-[#171717]">Healthcare</p>
-                      <p className="text-[10px] md:text-xs text-[#6B7280]">Quality Service</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Floating Card 2 - Bottom Left */}
-                <div className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 bg-white rounded-2xl shadow-xl p-3 md:p-4 animate-bounce-slow animation-delay-200">
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                      <Clock className="w-4 h-4 md:w-5 md:h-5 text-blue-600" />
-                    </div>
-                    <div>
-                      <p className="text-xs md:text-sm font-semibold text-[#171717]">24/7</p>
-                      <p className="text-[10px] md:text-xs text-[#6B7280]">Emergency Care</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Decorative Elements */}
-              <div className="absolute -z-10 -top-8 -right-8 w-32 h-32 md:w-48 md:h-48 bg-brand-teal/5 rounded-full blur-2xl"></div>
-              <div className="absolute -z-10 -bottom-8 -left-8 w-24 h-24 md:w-32 md:h-32 bg-blue-400/5 rounded-full blur-2xl"></div>
+            {/* services div on vector img */}
+            <div className='border-2 border-[#ECECEC] bg-white w-fit absolute top-42 right-4 rounded-xl px-3 py-2 font-medium font-poppins z-20' >
+                  <span className = " font-bold text-brand-blue" >
+                    24/7 
+                  </span>
+                  {" "}
+                  Service
             </div>
+
           </div>
 
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block">
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-xs text-[#6B7280] uppercase tracking-wider">Scroll</span>
-          <div className="w-5 h-8 border-2 border-[#6B7280]/30 rounded-full flex justify-center">
-            <div className="w-1.5 h-3 bg-brand-teal rounded-full animate-scroll"></div>
-          </div>
-        </div>
-      </div>
+      
 
     </section>
   )
