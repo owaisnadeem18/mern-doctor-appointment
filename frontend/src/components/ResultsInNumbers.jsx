@@ -7,8 +7,8 @@ import { useInView } from "react-intersection-observer";
 const ResultsInNumbers = ({ stats }) => {
   // Detect when section enters viewport
   const { ref, inView } = useInView({
-    triggerOnce: true, // sirf 1 dafa run ho
-    threshold: 0.3,    // 30% visible hone par trigger
+    triggerOnce: true, 
+    threshold: 0.3,    
   });
 
   return (
