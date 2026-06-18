@@ -1,47 +1,57 @@
-import React from 'react';
+"use client";
 
-const ResultsInNumbers = () => {
-  // Statics data array taake code clean aur maintainable rahe
-  const stats = [
-    { value: "99", symbol: "%", label: "Customer satisfaction" },
-    { value: "15", symbol: "k", label: "Online Patients" },
-    { value: "12", symbol: "k", label: "Patients Recovered" },
-    { value: "240", symbol: "%", label: "Company growth" },
-  ];
+import React from "react";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+
+const ResultsInNumbers = ({ stats }) => {
+  // Detect when section enters viewport
+  const { ref, inView } = useInView({
+    triggerOnce: true, // sirf 1 dafa run ho
+    threshold: 0.3,    // 30% visible hone par trigger
+  });
 
   return (
-    <div className="flex flex-col gap-20 text-center select-none">
-      
-      {/* Section Heading */}
+    <section
+      ref={ref}
+      aria-label="Company statistics"
+      className="flex flex-col gap-20 text-center select-none"
+    >
+      {/* Heading */}
       <h2 className="text-h2 font-bold text-brand-teal">
         Our results in numbers
       </h2>
 
-      {/* Grid Layout for Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6 lg:gap-12 items-start justify-start">
-        {stats.map((stat, index) => (
-          <div key={index} className="flex flex-col items-center justify-center">
-            
-            {/* Number and Symbol Container */}
+      {/* Stats Grid */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6 lg:gap-12">
+        {stats.map((stat) => (
+          <div
+            key={stat.label}
+            className="flex flex-col items-center justify-start"
+          >
+            {/* Number */}
             <div className="text-4xl md:text-5xl lg:text-6xl font-bold flex items-baseline justify-center">
               <span className="text-brand-teal">
-                {stat.value}
+                {inView ? (
+                  <CountUp end={parseInt(stat.value)} duration={2} />
+                ) : (
+                  0
+                )}
               </span>
+
               <span className="text-brand-light-teal">
-                {stat.symbol}  
+                {stat.symbol}
               </span>
             </div>
 
-            {/* Label text */}
+            {/* Label */}
             <p className="text-h3 text-brand-dark font-bold">
               {stat.label}
             </p>
-            
           </div>
         ))}
       </div>
-
-    </div>
+    </section>
   );
 };
 
