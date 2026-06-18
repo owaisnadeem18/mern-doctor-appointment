@@ -22,7 +22,7 @@ const HeroSection = () => {
       </div>
 
       <div className="relative flex items-center">
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center py-12 md:py-16 lg:py-20">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ">
           
           {/* Left Content */}
           <div className="space-y-6 md:space-y-8 lg:space-y-10 order-2 lg:order-1">
@@ -39,34 +39,33 @@ const HeroSection = () => {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight">
-              <span className="text-[#171717]">
-                Providing Quality
-              </span>
-              <br />
+            <h1 className="text-display font-secondary font-semibold">
+
+                Providing Quality 
+                
+                {/* one tab gap */}
+                &nbsp;
+
               <span className="text-brand-teal relative inline-block">
                 Healthcare
-                <svg 
-                  className="absolute -bottom-2 left-0 w-full h-3 text-brand-teal/20" 
-                  viewBox="0 0 100 10" 
-                  fill="none"
-                >
-                  <path 
-                    d="M0 5 Q25 0 50 5 T100 5" 
-                    stroke="currentColor" 
-                    strokeWidth="2"
-                    fill="none"
-                  />
-                </svg>
+                
               </span>
               <br />
-              <span className="text-[#171717]">
-                For A Brighter And
-              </span>
+                For A
+                &nbsp;
+                 <span className='text-brand-green' >
+                    Brighter
+                 </span>
+                 
+                &nbsp;
+                  And
               <br />
-              <span className="text-brand-teal">
-                Healthy Future
+              <span className="text-brand-green">
+                Healthy 
               </span>
+              
+                &nbsp;
+              Future
             </h1>
 
             {/* Description */}
@@ -109,7 +108,7 @@ const HeroSection = () => {
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-2">
                   {[1, 2, 3].map((i) => (
-                    <div key={i} className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-gradient-to-br from-brand-teal/80 to-brand-teal flex items-center justify-center text-white text-xs font-semibold">
+                    <div key={i} className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-linear-to-br from-brand-teal/80 to-brand-teal flex items-center justify-center text-white text-xs font-semibold">
                       {i === 3 ? '+' : `0${i}`}
                     </div>
                   ))}
