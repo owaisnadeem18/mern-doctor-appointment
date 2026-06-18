@@ -9,7 +9,7 @@ import professionalDoctor4 from "./Images/Ellipse 6.png"
 import professionalDoctor5 from "./Images/Ellipse 7.png"
 import professionalDoctor6 from "./Images/Ellipse 8.png"
 import professionalDoctor7 from "./Images/Ellipse 9.png"
-
+import surgeryRoomImg from "./Images/surgery-room-img.png"
 
 export {
     logo , 
@@ -22,5 +22,6 @@ export {
     professionalDoctor4,
     professionalDoctor5,
     professionalDoctor6,
-    professionalDoctor7
+    professionalDoctor7,
+    surgeryRoomImg
 }
