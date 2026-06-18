@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Play, Clock, ArrowRight } from 'lucide-react'
 import Button from './ui/Button'
 import { doctorImage, vector } from '@/assets'
+import { arrayOfDoctorsImages } from '@/lib/data/doctorsImagesData'
 
 // Replace with your actual image imports
 // import heroBg from '@/assets/hero-bg.jpg'
@@ -11,23 +12,16 @@ import { doctorImage, vector } from '@/assets'
 
 const HeroSection = () => {
   return (
-    <section className="relative ">
+    <section className="relative py-10">
       
       {/* Background Decorative Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Gradient Blobs */}
-        <div className="absolute -top-40 -right-40 w-[600px] h-[600px]  rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px]  rounded-full blur-3xl"></div>
-        
-        {/* Grid Pattern */}
-        
-      </div>
+      
 
       <div className="relative flex items-center">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ">
           
           {/* Left Content */}
-          <div className="flex flex-col justify-end gap-24">
+          <div className="flex flex-col justify-end gap-12 sm:gap-24">
             
             
             <div className='flex flex-col gap-3' >
@@ -74,7 +68,7 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-12">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-12">
               
               <Button href={"/appointments"} children={"Appointments"} className='px-[40px] py-[13px]' />
               
@@ -114,20 +108,47 @@ const HeroSection = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative flex justify-center lg:justify-end">
-            <Image src={doctorImage} alt="Doctor Image" width={449} height={626} className=" object-cover z-10" />
-            <Image src={vector} alt="Vector Image" width={520} height={548} className="absolute top-19 left-20 object-cover" />
+          
+          <div className="relative flex justify-start sm:justify-center w-full max-w-125 mx-auto">
 
-            {/* services div on vector img */}
-            <div className='border-2 border-[#ECECEC] bg-white w-fit absolute top-42 right-4 rounded-xl px-3 py-2 font-medium font-poppins z-20' >
-                  <span className = " font-bold text-brand-blue" >
-                    24/7 
-                  </span>
-                  {" "}
-                  Service
-            </div>
+  <Image
+    src={doctorImage}
+    alt="Doctor Image"
+    className="w-full max-w-105 h-auto object-contain z-10 "
+  />
 
-          </div>
+  <Image
+    src={vector}
+    alt="Vector Image"
+    className="absolute top-28 left-3 sm:left-7 w-full max-w-112.5 object-contain"
+  />
+
+  {/* Badge 1 */}
+  <div className="absolute top-6 right-0 top-42 sm:right-2 bg-white border-2 border-[#ECECEC] rounded-xl px-3 py-2 z-20 font-poppins">
+    <span className="font-bold text-brand-teal ">24/7</span> Service
+  </div>
+
+  {/* Badge 2 */}
+  <div className="absolute bottom-6 left-0 sm:bottom-21 sm:left-0 bg-white border-2 border-[#ECECEC] rounded-xl px-3 py-2 z-20 ">
+    <div className="text-center font-poppins">
+      <div>Our Professionals</div>
+
+      <div className="flex items-center ">
+        {arrayOfDoctorsImages.map((image, index) => (
+          <Image
+            key={index}
+            src={image}
+            alt={`Doctor ${index + 1}`}
+            width={28}
+            height={28}
+            className="rounded-full border-2 border-white shadow-md -ml-3 first:ml-0"
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+
+</div>
 
         </div>
       </div>
