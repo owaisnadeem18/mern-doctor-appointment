@@ -4,6 +4,7 @@ import MeetOurTeam from '@/components/MeetOurTeam'
 import ReasonsToChooseUs from '@/components/ReasonsToChooseUs'
 import ResultsInNumbers from '@/components/ResultsInNumbers'
 import { Services } from '@/components/Services'
+import TrustedCompanies from '@/components/TrustedCompanies'
 import { statsData } from '@/lib/data/statsData'
 import React from 'react'
 
@@ -16,6 +17,7 @@ const page = () => {
       <ReasonsToChooseUs/>
       <Services  />
       <MeetOurTeam/>
+      <TrustedCompanies />
     </div>
   )
 }
