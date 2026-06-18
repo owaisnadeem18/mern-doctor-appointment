@@ -6,6 +6,7 @@
 
   /* Brand colors */
   --brand-teal: #007e85;
+  --brand-light-teal: #76b5b9;
   --brand-dark: #333333;
   --brand-muted: #000000B2;
   --brand-light-green: #6EAB36;
@@ -18,7 +19,8 @@
 
   --text-h1: 32px;
   --text-h2: 28px;
-  --text-h3: 18px;
+  --text-h3: 22px;
+  --text-h4: 18px;
   --text-body: 16px;
   --text-small: 14px;
   --text-paragraph: 18px;
@@ -29,7 +31,8 @@
   :root {
     --text-h1: 36px;    
     --text-h2: 24px;
-    --text-h3: 20px;
+    --text-h3: 22px;
+    --text-h4: 20px;
     --text-body: 18px;
     --text-small: 14px;
     --text-paragraph: 20px;
@@ -41,7 +44,8 @@
   :root {
     --text-h1: 40px;
     --text-h2: 36px;
-    --text-h3: 20px;
+    --text-h3: 24px;
+    --text-h4: 20px;
     --text-body: 18px;
     --text-small: 14px;
     --text-paragraph: 20px;
@@ -66,6 +70,7 @@
   --color-brand-blue: var(--brand-blue);
   --color-brand-offwhite: var(--brand-off-white);
   --color-brand-teal: var(--brand-teal);
+  --color-brand-light-teal: var(--brand-light-teal);
   --color-gray-footer: var(--brand-gray);
 }
 
@@ -131,6 +136,13 @@
 
 @utility text-h3 {
   font-size: var(--text-h3);
+  line-height: 34px;
+}
+
+
+
+@utility text-h4 {
+  font-size: var(--text-h4);
   font-weight: 700;
   line-height: 1.2;
 }

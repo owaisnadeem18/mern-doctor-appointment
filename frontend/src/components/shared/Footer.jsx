@@ -50,7 +50,7 @@ const socialLinks = [
 const FooterColumn = ({ title, links }) => {
   return (
     <nav aria-label={title} className="flex flex-col gap-6 sm:gap-12">
-      <h3 className="text-h3 font-bold font-secondary">{title}</h3>
+      <h3 className="text-h4 font-bold font-secondary">{title}</h3>
 
       <ul className="flex flex-col gap-4 sm:gap-6 text-body">
         {links.map((link) => (
@@ -71,7 +71,7 @@ const FooterColumn = ({ title, links }) => {
 const SocialLinks = () => {
   return (
     <div className="flex flex-col gap-6 sm:gap-12">
-      <h3 className="text-h3 font-bold font-secondary">Follow us</h3>
+      <h3 className="text-h4 font-bold font-secondary">Follow us</h3>
 
       <ul className="flex flex-col gap-4 sm:gap-6 ">
         {socialLinks.map((social) => (
