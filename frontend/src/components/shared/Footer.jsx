@@ -76,7 +76,7 @@ const SocialLinks = () => {
       <ul className="flex flex-col gap-4 sm:gap-6 ">
         {socialLinks.map((social) => (
           <li key={social.label} className="flex items-center gap-3">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-gray-footer">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-brand-gray">
               {social.icon}
             </div>
 

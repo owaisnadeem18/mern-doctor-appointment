@@ -16,6 +16,12 @@ import servicesImg3 from "./Images/Services-img-3.png"
 import servicesImg4 from "./Images/Services-img-4.png"
 import servicesImg5 from "./Images/Services-img-5.png"
 import servicesImg6 from "./Images/Services-img-6.png"
+import teamMember1 from "./Images/team-member-1.png"
+import teamMember2 from "./Images/team-member-2.png"
+import teamMember3 from "./Images/team-member-3.png"
+import teamMember4 from "./Images/team-member-4.png"
+import teamMember5 from "./Images/team-member-5.png"
+import teamMember6 from "./Images/team-member-6.png"
 
 export {
     logo , 
@@ -35,5 +41,11 @@ export {
     servicesImg3,
     servicesImg4,
     servicesImg5,
-    servicesImg6
+    servicesImg6,
+    teamMember1,
+    teamMember2,
+    teamMember3,
+    teamMember4,
+    teamMember5,
+    teamMember6
 }
