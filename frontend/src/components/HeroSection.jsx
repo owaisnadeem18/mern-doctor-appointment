@@ -12,7 +12,7 @@ import { arrayOfDoctorsImages } from '@/lib/data/doctorsImagesData'
 
 const HeroSection = () => {
   return (
-    <section className="relative py-10">
+    <section className="relative">
       
       {/* Background Decorative Elements */}
       

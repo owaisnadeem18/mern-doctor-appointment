@@ -6,7 +6,7 @@ const FindDoctor = () => {
   const [isAvailable, setIsAvailable] = useState(true);
 
   return (
-    <div className="w-full page-container bg-brand-offwhite border-4 border-[#ECECEC] rounded-2xl p-6 md:p-8 font-primary shadow-sm flex flex-col gap-4 md:gap-6 ">
+    <div className="w-full page-container bg-brand-offwhite border-2 border-brand-offwhite rounded-2xl p-6 md:p-8 font-primary shadow-sm flex flex-col gap-4 md:gap-6 ">
       {/* Heading */}
       <h2 className="text-h2 ">
         Find A Doctor
@@ -20,7 +20,7 @@ const FindDoctor = () => {
           <input
             type="text"
             placeholder="Name"
-            className="w-full px-4 py-3 border border-[#7BC4C4] rounded-lg text-sm md:text-base text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#008080] bg-white transition-all"
+            className="w-full px-4 py-3 border border-brand-teal rounded-lg text-sm md:text-base text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#008080] bg-white transition-all"
           />
         </div>
 
@@ -29,7 +29,7 @@ const FindDoctor = () => {
           <input
             type="text"
             placeholder="Speciality"
-            className="w-full px-4 py-3 border border-[#7BC4C4] rounded-lg text-sm md:text-base text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#008080] bg-white transition-all"
+            className="w-full px-4 py-3 border border-brand-teal rounded-lg text-sm md:text-base text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#008080] bg-white transition-all"
           />
         </div>
 
