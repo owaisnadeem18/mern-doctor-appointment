@@ -9,6 +9,7 @@
   --brand-dark: #333333;
   --brand-muted: #000000B2;
   --brand-light-green: #6EAB36;
+  --brand-off-white: #FAFAFA;
   --brand-blue: #007E85;
   --brand-gray: #555555;
 
@@ -29,7 +30,7 @@
 @media (min-width: 768px) {
   :root {
     --text-display: 36px;
-    --text-h1: 30px;
+    --text-h1: 30px;    
     --text-h2: 24px;
     --text-h3: 20px;
     --text-body: 18px;
@@ -67,6 +68,7 @@
   --color-brand-muted: var(--brand-muted);
   --color-brand-green: var(--brand-light-green);
   --color-brand-blue: var(--brand-blue);
+  --color-brand-offwhite: var(--brand-off-white);
   --color-brand-teal: var(--brand-teal);
   --color-gray-footer: var(--brand-gray);
 }
