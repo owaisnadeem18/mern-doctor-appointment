@@ -50,9 +50,9 @@ const socialLinks = [
 const FooterColumn = ({ title, links }) => {
   return (
     <nav aria-label={title} className="flex flex-col gap-6 sm:gap-12">
-      <h3 className="footer-heading">{title}</h3>
+      <h3 className="text-h3">{title}</h3>
 
-      <ul className="flex flex-col gap-4 sm:gap-6 footer-text">
+      <ul className="flex flex-col gap-4 sm:gap-6 text-body">
         {links.map((link) => (
           <li key={link}>
             <Link
@@ -71,9 +71,9 @@ const FooterColumn = ({ title, links }) => {
 const SocialLinks = () => {
   return (
     <div className="flex flex-col gap-6 sm:gap-12">
-      <h3 className="footer-heading">Follow us</h3>
+      <h3 className="text-h3">Follow us</h3>
 
-      <ul className="flex flex-col gap-4 sm:gap-6 footer-text">
+      <ul className="flex flex-col gap-4 sm:gap-6 ">
         {socialLinks.map((social) => (
           <li key={social.label} className="flex items-center gap-3">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-gray-footer">
@@ -107,7 +107,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.7fr_1fr_1fr_1fr_1fr] gap-10">
 
           {/* Logo + Copyright */}
-          <div className="flex flex-col gap-4 col-span-2 md:col-span-1 items-center text-center md:items-start md:text-left">
+          <div className="flex flex-col gap-8 col-span-2 md:col-span-1 items-center text-center md:items-start md:text-left">
             <Image
               src={footerlogo}
               alt="Healthcare Logo"
@@ -116,7 +116,7 @@ const Footer = () => {
               priority
             />
 
-            <p className="footer-copyright">
+            <p className="text-body">
               Copyright © {new Date().getFullYear()} BRIX Templates
               <br />
               All Rights Reserved

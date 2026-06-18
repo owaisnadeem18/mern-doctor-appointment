@@ -10,6 +10,13 @@
   /* footer icons color */
   --brand-gray: #555555;
 
+  /* I need to setup typography */
+
+  --text-display: 40px;
+  --text-h1: 32px;
+  --text-h2: 24px;
+  --text-body: 18px;
+
 }
 
 @theme inline {
@@ -63,28 +70,51 @@
 
 /* utility classes for dynamic footer items typography */
 
-@utility footer-text {
-  font-family: var(--font-dm-sans);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0;
+/* DISPLAY (Hero headings) */
+@utility text-display {
+  font-family: var(--font-lato);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
 }
 
-@utility footer-heading {
+/* HEADINGS */
+@utility text-h1 {
+  font-family: var(--font-lato);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+@utility text-h2 {
+  font-family: var(--font-dm-sans);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@utility text-h3 {
   font-family: var(--font-dm-sans);
   font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
   font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0;
 }
 
-@utility footer-copyright {
+/* BODY */
+@utility text-body {
   font-family: var(--font-dm-sans);
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0;
+  line-height: 1.6;
+}
+
+/* SMALL TEXT */
+@utility text-small {
+  font-family: var(--font-dm-sans);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 @utility footer-icon-color {
