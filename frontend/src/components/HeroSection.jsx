@@ -124,7 +124,7 @@ const HeroSection = () => {
   />
 
   {/* Badge 1 */}
-  <div className="absolute top-6 right-0 top-42 sm:right-2 bg-white border-2 border-[#ECECEC] rounded-xl px-3 py-2 z-20 font-poppins">
+  <div className="absolute right-0 top-42 sm:right-2 bg-white border-2 border-[#ECECEC] rounded-xl px-3 py-2 z-20 font-poppins">
     <span className="font-bold text-brand-teal ">24/7</span> Service
   </div>
 
