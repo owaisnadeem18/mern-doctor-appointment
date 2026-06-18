@@ -104,10 +104,10 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-6 py-12 md:px-10 lg:px-20 lg:py-20">
 
         {/* GRID */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.7fr_1fr_1fr_1fr_1fr] gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.7fr_1fr_1fr_1fr_1fr] gap-10">
 
           {/* Logo + Copyright */}
-          <div className="flex flex-col gap-4 col-span-2 md:col-span-1">
+          <div className="flex flex-col gap-4 col-span-2 md:col-span-1 items-center text-center md:items-start md:text-left">
             <Image
               src={footerlogo}
               alt="Healthcare Logo"

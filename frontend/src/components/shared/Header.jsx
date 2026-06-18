@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header className="w-full bg-white xl:bg-transparent">
-      <div className="page-container flex items-center justify-between h-20 relative px-4">
+      <div className="page-container flex items-center justify-between h-20 relative">
 
         {/* Logo */}
         <Link href="/" className="z-50">
