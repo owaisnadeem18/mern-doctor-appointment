@@ -10,6 +10,12 @@ import professionalDoctor5 from "./Images/Ellipse 7.png"
 import professionalDoctor6 from "./Images/Ellipse 8.png"
 import professionalDoctor7 from "./Images/Ellipse 9.png"
 import surgeryRoomImg from "./Images/surgery-room-img.png"
+import servicesImg1 from "./Images/Services-img-1.png"
+import servicesImg2 from "./Images/Services-img-2.png"
+import servicesImg3 from "./Images/Services-img-3.png"
+import servicesImg4 from "./Images/Services-img-4.png"
+import servicesImg5 from "./Images/Services-img-5.png"
+import servicesImg6 from "./Images/Services-img-6.png"
 
 export {
     logo , 
@@ -23,5 +29,11 @@ export {
     professionalDoctor5,
     professionalDoctor6,
     professionalDoctor7,
-    surgeryRoomImg
+    surgeryRoomImg,
+    servicesImg1,
+    servicesImg2,
+    servicesImg3,
+    servicesImg4,
+    servicesImg5,
+    servicesImg6
 }

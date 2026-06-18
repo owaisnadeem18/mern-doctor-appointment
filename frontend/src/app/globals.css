@@ -71,7 +71,7 @@
   --color-brand-offwhite: var(--brand-off-white);
   --color-brand-teal: var(--brand-teal);
   --color-brand-light-teal: var(--brand-light-teal);
-  --color-gray-footer: var(--brand-gray);
+  --color-brand-gray: var(--brand-gray);
 }
 
 /* =========================
@@ -209,7 +209,7 @@
    ========================= */
 
 @utility footer-icon-color {
-  color: var(--color-gray-footer);
+  color: var(--color-brand-gray);
 }
 
 /* =========================

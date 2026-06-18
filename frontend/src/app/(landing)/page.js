@@ -2,6 +2,7 @@ import FindDoctor from '@/components/FindDoctor'
 import HeroSection from '@/components/HeroSection'
 import ReasonsToChooseUs from '@/components/ReasonsToChooseUs'
 import ResultsInNumbers from '@/components/ResultsInNumbers'
+import { Services } from '@/components/Services'
 import { statsData } from '@/lib/data/statsData'
 import React from 'react'
 
@@ -12,6 +13,7 @@ const page = () => {
       <FindDoctor/>
       <ResultsInNumbers stats={statsData} />
       <ReasonsToChooseUs/>
+      <Services  />
     </div>
   )
 }
