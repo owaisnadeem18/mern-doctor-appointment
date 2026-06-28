@@ -1,6 +1,7 @@
 import FindDoctor from '@/components/FindDoctor'
 import HeroSection from '@/components/HeroSection'
 import MeetOurTeam from '@/components/MeetOurTeam'
+import NewsSubscribe from '@/components/NewsSubscribe'
 import ReasonsToChooseUs from '@/components/ReasonsToChooseUs'
 import ResultsInNumbers from '@/components/ResultsInNumbers'
 import { Services } from '@/components/Services'
@@ -18,6 +19,7 @@ const page = () => {
       <Services  />
       <MeetOurTeam/>
       <TrustedCompanies />
+      <NewsSubscribe/>
     </div>
   )
 }

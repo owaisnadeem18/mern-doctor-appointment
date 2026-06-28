@@ -6,7 +6,7 @@ export const Services = () => {
     <section className="flex flex-col gap-12">
       
       {/* Top Header Section */}
-      <div className="flex flex-col gap-4 justify-center items-center text-center max-w-[50%] mx-auto">
+      <div className="flex flex-col gap-4 justify-center items-center text-center md:max-w-[70%] xl:max-w-[50%] mx-auto">
         <h2 className="text-h2 font-bold text-brand-teal ">
           Services we provide
         </h2>
