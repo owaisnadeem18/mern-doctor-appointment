@@ -1,4 +1,5 @@
 import React from 'react'
+import TestimonialsSection from './TestimonialSection'
 
 const Testimonial = () => {
   return (
@@ -13,6 +14,8 @@ const Testimonial = () => {
             </p>  
           </div>
 
+        {/* Testimonial Cards Section */}
+        <TestimonialsSection />
 
     </section>
   )

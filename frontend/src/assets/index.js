@@ -28,6 +28,10 @@ import youtube from "./Images/YouTube.png"
 import pinterest from "./Images/Pinterest.png"
 import twitch from "./Images/Twitch.png"
 import webflow from "./Images/Webflow.png"
+import testimonial1 from "./Images/testimonial-img-1.png"
+import testimonial2 from "./Images/testimonial-img-2.png"
+import testimonial3 from "./Images/testimonial-img-3.png"
+
 
 
 export {
@@ -60,5 +64,8 @@ export {
     youtube,
     pinterest,
     twitch,
-    webflow
+    webflow,
+    testimonial1,
+    testimonial2,
+    testimonial3
 }
