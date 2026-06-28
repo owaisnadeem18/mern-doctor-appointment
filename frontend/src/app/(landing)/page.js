@@ -5,6 +5,7 @@ import NewsSubscribe from '@/components/NewsSubscribe'
 import ReasonsToChooseUs from '@/components/ReasonsToChooseUs'
 import ResultsInNumbers from '@/components/ResultsInNumbers'
 import { Services } from '@/components/Services'
+import Testimonial from '@/components/Testimonial'
 import TrustedCompanies from '@/components/TrustedCompanies'
 import { statsData } from '@/lib/data/statsData'
 import React from 'react'
@@ -17,7 +18,8 @@ const page = () => {
       <ResultsInNumbers stats={statsData} />
       <ReasonsToChooseUs/>
       <Services  />
-      <MeetOurTeam/>
+      <MeetOurTeam />
+      <Testimonial />
       <TrustedCompanies />
       <NewsSubscribe/>
     </div>
