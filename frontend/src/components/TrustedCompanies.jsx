@@ -6,21 +6,22 @@ import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import Image from 'next/image'
+import { google, facebook, youtube, pinterest, twitch, webflow } from '@/assets'
 
 const PartnerLogos = () => {
 
   
 
   const logos = [
-    { name: 'Google', className: 'font-semibold text-gray-600 text-xl' },
-    { name: 'facebook', className: 'font-bold text-gray-600 text-xl tracking-tighter' },
-    { name: 'YouTube', className: 'font-bold text-gray-600 text-xl' },
-    { name: 'Pinterest', className: 'font-medium text-gray-600 text-xl' },
-    { name: 'twitch', className: 'font-black text-gray-600 text-xl italic' },
-    { name: 'webflow', className: 'font-semibold text-gray-600 text-xl' },
+    { name: 'Google', image: google, className: 'font-semibold text-gray-600 text-xl' },
+    { name: 'facebook', image: facebook, className: 'font-bold text-gray-600 text-xl tracking-tighter' },
+    { name: 'YouTube', image: youtube, className: 'font-bold text-gray-600 text-xl' },
+    { name: 'Pinterest', image: pinterest, className: 'font-medium text-gray-600 text-xl' },
+    { name: 'twitch', image: twitch, className: 'font-black text-gray-600 text-xl italic' },
+    { name: 'webflow', image: webflow, className: 'font-semibold text-gray-600 text-xl' },
     
-    { name: 'Google', className: 'font-semibold text-gray-600 text-xl' },
-    { name: 'facebook', className: 'font-bold text-gray-600 text-xl tracking-tighter' },
+    { name: 'Google', image: google, className: 'font-semibold text-gray-600 text-xl' },
+    { name: 'facebook', image: facebook, className: 'font-bold text-gray-600 text-xl tracking-tighter' },
   ]
 
   
@@ -59,7 +60,7 @@ const PartnerLogos = () => {
           {logos.map((logo, index) => (
             <SwiperSlide key={index} className="flex items-center justify-center py-4 select-none">
               <div className="opacity-70 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center grayscale contrast-200">
-                <Image src="/path/to/logo.png" alt={logo.name} width={100} height={50} />
+                <Image src={logo.image} alt={logo.name} width={100} height={50} />
               </div>
             </SwiperSlide>
           ))}

@@ -22,6 +22,13 @@ import teamMember3 from "./Images/team-member-3.png"
 import teamMember4 from "./Images/team-member-4.png"
 import teamMember5 from "./Images/team-member-5.png"
 import teamMember6 from "./Images/team-member-6.png"
+import google from "./Images/Google.png"
+import facebook from "./Images/Facebook.png"
+import youtube from "./Images/YouTube.png"
+import pinterest from "./Images/Pinterest.png"
+import twitch from "./Images/Twitch.png"
+import webflow from "./Images/Webflow.png"
+
 
 export {
     logo , 
@@ -47,5 +54,11 @@ export {
     teamMember3,
     teamMember4,
     teamMember5,
-    teamMember6
+    teamMember6,
+    google,
+    facebook,
+    youtube,
+    pinterest,
+    twitch,
+    webflow
 }
