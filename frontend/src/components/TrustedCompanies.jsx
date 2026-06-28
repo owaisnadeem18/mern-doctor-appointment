@@ -3,13 +3,14 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
-
-// Swiper styles import karna zaroori hai
 import 'swiper/css'
 import 'swiper/css/pagination'
+import Image from 'next/image'
 
 const PartnerLogos = () => {
-  // Demo logos array (Inko aap apne actual SVG paths ya Images se replace kar sakte hain)
+
+  
+
   const logos = [
     { name: 'Google', className: 'font-semibold text-gray-600 text-xl' },
     { name: 'facebook', className: 'font-bold text-gray-600 text-xl tracking-tighter' },
@@ -22,23 +23,24 @@ const PartnerLogos = () => {
     { name: 'facebook', className: 'font-bold text-gray-600 text-xl tracking-tighter' },
   ]
 
+  
+
   return (
-    <section className="py-12 w-full">
+
+    <section className="py-12 ">
       <div className="w-full flex flex-col gap-8">
-        {/* Heading matching image_2725f9.png */}
         <h2 className=" text-h2 text-brand-teal text-center font-bold ">
           Trusted by 10,000+ companies around the world
         </h2>
 
-        {/* Swiper Slider */}
         <Swiper
   modules={[Autoplay, Pagination]}
   spaceBetween={30}
-  slidesPerView={2}
   autoplay={{
     delay: 3000,
     disableOnInteraction: false,
   }}
+  slidesPerView={1}
   pagination={{
     clickable: true,
     el: '.custom-pagination',
@@ -57,8 +59,7 @@ const PartnerLogos = () => {
           {logos.map((logo, index) => (
             <SwiperSlide key={index} className="flex items-center justify-center py-4 select-none">
               <div className="opacity-70 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center grayscale contrast-200">
-                {/* Agar images hain to <Image /> tag use karein, abhi k liye placeholder text hai */}
-                <span className={`${logo.className} text-center`}>{logo.name}</span>
+                <Image src="/path/to/logo.png" alt={logo.name} width={100} height={50} />
               </div>
             </SwiperSlide>
           ))}
