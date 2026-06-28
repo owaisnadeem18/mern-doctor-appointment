@@ -6,7 +6,7 @@ const NewsSubscribe = () => {
   return (
     
           <div className="max-w-xl mx-auto flex flex-col gap-4 w-full py-8">
-            <h3 className="xl:text-[28px] sm:text-[20px] text-sm lg:text-[24px]  font-bold text-center">
+            <h3 className="xl:text-[28px] text-[24px]  font-bold text-center">
               Subscribe to our newsletter
             </h3>
     
