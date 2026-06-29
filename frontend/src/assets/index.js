@@ -31,7 +31,9 @@ import webflow from "./Images/Webflow.png"
 import testimonial1 from "./Images/testimonial-img-1.png"
 import testimonial2 from "./Images/testimonial-img-2.png"
 import testimonial3 from "./Images/testimonial-img-3.png"
-
+import customersFeedbackImg1 from "./Images/customers-feedback-img-1.png"
+import customersFeedbackImg2 from "./Images/customers-feedback-img-2.png"
+import customersFeedbackImg3 from "./Images/customers-feedback-img-3.png"
 
 
 export {
@@ -67,5 +69,8 @@ export {
     webflow,
     testimonial1,
     testimonial2,
-    testimonial3
+    testimonial3,
+    customersFeedbackImg1,
+    customersFeedbackImg2,
+    customersFeedbackImg3
 }

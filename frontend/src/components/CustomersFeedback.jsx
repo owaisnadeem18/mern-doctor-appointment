@@ -1,4 +1,5 @@
 import React from 'react'
+import CustomersFeedbackSection from './CustomersFeedbackSection'
 
 const CustomersFeedback = () => {
   return (
@@ -15,6 +16,10 @@ const CustomersFeedback = () => {
             Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics 
         </p>  
       </div>
+
+        {/* Customers Feedback Cards Section */}
+
+        <CustomersFeedbackSection />      
 
     </section>
   )

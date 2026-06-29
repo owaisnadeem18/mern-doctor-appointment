@@ -1,4 +1,5 @@
 import CustomersFeedback from '@/components/CustomersFeedback'
+import FAQ from '@/components/FAQ'
 import FindDoctor from '@/components/FindDoctor'
 import NewsSubscribe from '@/components/NewsSubscribe'
 import Services from '@/components/Services'
@@ -10,6 +11,7 @@ const page = () => {
       <FindDoctor />
       <Services/>
       <CustomersFeedback />
+      <FAQ/>
       <NewsSubscribe />
     </div>
   )
