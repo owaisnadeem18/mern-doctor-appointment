@@ -64,6 +64,8 @@
   --font-mono: var(--font-dm-mono);
   --font-tera: var(--font-lexend-tera);
   --font-lato: var(--font-lato);
+  --font-poppins: var(--font-poppins);
+  --font-montserrat: var(--font-montserrat);
 
   --color-brand-muted: var(--brand-muted);
   --color-brand-green: var(--brand-light-green);
@@ -121,11 +123,8 @@
    ========================= */
 
 @utility text-h1 {
-  font-family: var(--font-lato);
   font-size: var(--text-h1);
-  font-weight: 600;
   line-height: 1.1;
-  color: var(--brand-dark);
 }
 
 
@@ -189,12 +188,20 @@
   font-family: var(--font-poppins);
 }
 
+@utility font-montserrat {
+  font-family: var(--font-montserrat);
+}
+
 /* =========================
    WEIGHTS
    ========================= */
 
 @utility font-regular {
   font-weight: 400;
+}
+
+@utility font-medium {
+  font-weight: 500;
 }
 
 @utility font-semibold {

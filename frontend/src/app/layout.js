@@ -1,4 +1,4 @@
-import { DM_Sans, Lexend_Tera, Lato, Poppins } from "next/font/google";
+import { DM_Sans, Lexend_Tera, Lato, Poppins , Montserrat } from "next/font/google";
 
 import "./globals.css";
 import Footer from "@/components/shared/Footer";
@@ -27,6 +27,12 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-montserrat",
+});
+
 
 export const metadata = {
   title: "Create Next App",
@@ -35,7 +41,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${lexendTera.variable} ${lato.variable} ${poppins.variable} h-full antialiased ` }>
+    <html lang="en" className={`${dmSans.variable} ${lexendTera.variable} ${lato.variable} ${poppins.variable} ${montserrat.variable} h-full antialiased ` }>
   <body className="min-h-full flex flex-col">
 
     <Header />
