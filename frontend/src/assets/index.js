@@ -34,7 +34,7 @@ import testimonial3 from "./Images/testimonial-img-3.png"
 import customersFeedbackImg1 from "./Images/customers-feedback-img-1.png"
 import customersFeedbackImg2 from "./Images/customers-feedback-img-2.png"
 import customersFeedbackImg3 from "./Images/customers-feedback-img-3.png"
-
+import servicesHeroBgImg from "./Images/Services-hero-bg-img.png"
 
 export {
     logo , 
@@ -72,5 +72,6 @@ export {
     testimonial3,
     customersFeedbackImg1,
     customersFeedbackImg2,
-    customersFeedbackImg3
+    customersFeedbackImg3,
+    servicesHeroBgImg
 }

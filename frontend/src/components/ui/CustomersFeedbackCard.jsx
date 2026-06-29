@@ -10,7 +10,6 @@ const CustomersFeedbackCard = ({ customerImg, comments, rating }) => {
       {/* Render exactly 5 stars matching image_aeee38.png */}
       <div className="flex items-center gap-1">
         {Array.from({ length: 5 }, (_, index) => {
-        console.log('Rating:', rating, 'Index:', index); // Debugging line  
           const isFilled = index < rating;
           return isFilled ? (
             <FaStar key={index} size={20} className="text-[#F2C94C]" />
