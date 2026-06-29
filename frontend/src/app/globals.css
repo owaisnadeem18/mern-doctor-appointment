@@ -168,6 +168,34 @@
   color: var(--brand-muted);
 }
 
+
+/* utility headings for Montserrat in services section */
+
+@utility text-montserrat-h1 {
+  font-size: 58px;
+  line-height: 80px;
+}
+
+@utility text-montserrat-h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+@utility text-montserrat-h3 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@utility text-montserrat-h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@utility text-montserrat-body {
+  font-size: 18px;
+  line-height: 28px;
+}
+
 /* =========================
    FONTS
    ========================= */
